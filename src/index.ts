@@ -6,7 +6,7 @@ dotenv.config();
 
 const llmProxy = express();
 // Configuration
-const port = process.env.PORT;
+const port = process.env.PORT || 5000;
 const llmUrl = "https://api.openai.com";
 
 llmProxy.use(
